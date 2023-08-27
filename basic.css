@@ -1,0 +1,124 @@
+/*reset everything to 0
+html, body, section, nav, article, aside, h1, h2, h3,
+h4, h5, h6, hgroup, header, footer, address, p, hr, pre,
+blockquote, ol, ul, li, dl, dt, dd, figure, figcaption,
+div, table, caption, form, fieldset {
+vertical-align: baseline;
+margin: 0;
+padding: 0;
+}*/
+
+header{
+	max-width: 38em;
+	text-align: center;
+	margin: auto;
+	border-bottom-style:groove;
+}
+
+#link{text-decoration: none;}
+
+#h {
+	font-family: "El Messiri", serif;
+	color: black;
+}
+
+#title{text-align: center;}
+
+article{
+	max-width: 38em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer{
+	max-width: 38em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+	border-top-style: groove;
+}
+
+p{
+	/*font stuff */
+	font-family: "Crimson Text", serif;
+	font-size: 1.2rem;
+
+	/* unitless line height prevents problems */
+	line-height: 1.2;
+
+	/* responsive length 
+	ideal line length is between 45-75 characters per line
+	1em ~= 2ch, so the ideal range is between 23em -- 38em*/
+	max-width: 38em;
+	min-width: 25em;
+	
+	margin: auto;
+	
+	text-align: justify;
+}
+
+p + p {
+	text-indent: 1.5em;
+}
+
+blockquote{
+	border-left-style: solid;
+	border-left-color: crimson;
+	padding-left: 1em;
+	text-align: justify;
+	
+	/* width */
+	max-width: 38em;
+	min-width: 25em;
+
+	/* margins to center text*/
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+/* headings */
+
+/*h1 is way too big imo, especially if you expand the window*/
+
+h1 {
+	font-family: "Cherry Swash", serif;
+	font-weight: 500;
+	font-size: 2.25rem;
+	margin-top: 1.5rem;
+	margin-bottom: 0;
+}
+
+h2 {
+	font-family: "Cherry Swash", serif;
+	font-weight: 550;
+	font-size: 2rem;
+	margin-top: 1.5rem;
+	margin-bottom: 0;
+
+}
+
+h3 {
+	font-family: "Cherry Swash", serif;
+	font-weight: 500;
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+	margin-bottom: 0;
+}
+
+/* media queries */
+
+@media screen and (min-width: 60em) and (min-height: 30em){
+	h1 { font-size: 3.1875rem; }
+	h2 { font-size: 2.0625rem; }
+	h3 { font-size: 1.5625rem; }
+	p  { font-size:1.125rem;   }
+}
+
+@media screen and (min-width: 120em) and (min-height60em) {
+	h1 { font-size: 4.875rem; }
+	h2 { font-size: 2.75rem;  }
+	h3 { font-size: 1.75rem;  }
+	p  { font-size:1.3125rem; }
+}
