@@ -107,7 +107,14 @@ h3 {
 	margin-bottom: 0;
 }
 
-/* media queries 
+/* Lists, both ordered and unordered */
+
+li {
+	font-size: 1.2rem;
+	margin-bottom: 0.5rem;
+}
+
+/* media queries (seems useless atm, I don't remember where I read this thing can be useful)
 
 @media screen and (min-width: 60em) and (min-height: 30em){
 	h1 { font-size: 3.1875rem; }
